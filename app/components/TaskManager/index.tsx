@@ -3,16 +3,15 @@ import { useModalContext } from "@/app/context/modalContext";
 import { useTasksContext } from "@/app/context/taskContext";
 import { Task } from "@/app/utils/types";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import { SelectChangeEvent, Skeleton } from "@mui/material";
+import { Skeleton } from "@mui/material";
 import Button from "@mui/material/Button";
 
 import dayjs from "dayjs";
-import { useState } from "react";
 import TaskCard from "../TaskCard";
 import TaskSorter from "../TaskSorter";
 
 export default function TaskManager() {
-  const { tasks, loading, deleteTask, getTasksOrdered } = useTasksContext();
+  const { tasks, loading, deleteTask } = useTasksContext();
 
   const { setIsEdit, setFormData, handleOpen, formInitialValues } =
     useModalContext();
