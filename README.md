@@ -47,6 +47,17 @@ npm run dev
 
 The app will be available at `http://localhost:3000` by default.
 
+## Environment Variables
+
+The application requires environment variables for configuration. You can define them in a `.env` file in the root of the project.
+
+Example `.env` file:
+```bash
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+Make sure to set up all required variables before running the application.
+
 ## Testing
 
 To run tests:
