@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
 
 const TasksContext = createContext();
-const serverURl = "http://localhost:8000/api/v1";
 
+const serverURl = `${process.env.NEXT_PUBLIC_API_URL}:8000/api/v1`;
 export const TasksContextProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
