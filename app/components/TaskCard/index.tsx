@@ -14,7 +14,7 @@ const StatusComponent = ({ status }: { status: Status }) => {
       : "text-yellow-400";
   return (
     <div className={`font-bold capitalize text-xs w-1/4 ${color}`}>
-      <CircleIcon className={`text-xs  w-4 h-4 ${color}`} />
+      <CircleIcon fontSize="inherit" className={`${color}`} />
       <span>{status}</span>
     </div>
   );
