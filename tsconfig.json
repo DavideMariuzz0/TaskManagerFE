@@ -21,6 +21,14 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/context/taskContext.ts",
+    "app/context/taskContext.js",
+    "app/context/TasksContextProvider.test.tsx"
+  ],
   "exclude": ["node_modules"]
 }
