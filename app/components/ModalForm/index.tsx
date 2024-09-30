@@ -61,14 +61,7 @@ export default function ModalForm() {
               setSubmitting(false);
             }}
           >
-            {({
-              values,
-              submitForm,
-              resetForm,
-              isSubmitting,
-              touched,
-              errors,
-            }) => (
+            {({ submitForm, resetForm, isSubmitting }) => (
               <Form>
                 <FormControl sx={{ width: "100%", marginBottom: 3 }}>
                   <Field
@@ -102,6 +95,7 @@ export default function ModalForm() {
                   >
                     {status.map((item) => (
                       <MenuItem
+                        key={item}
                         value={item}
                         sx={{ textTransform: "capitalize" }}
                       >

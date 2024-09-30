@@ -34,14 +34,6 @@ export default function TaskManager() {
     deleteTask(id);
   };
 
-  const [orderBy, setOrderBy] = useState("");
-
-  const handleChange = (event: SelectChangeEvent) => {
-    const value = event.target.value;
-    setOrderBy(event.target.value as string);
-    getTasksOrdered(value);
-  };
-
   return (
     <div className="w-full">
       <h1 className="text-3xl font-bold text-center mb-10">
